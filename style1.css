@@ -1,3 +1,4 @@
+@media screen and (min-width: 600px) {
 body{
     margin: 0;
     padding: 0;
@@ -16,15 +17,17 @@ ul{
 
 
 }
+
 ul li h1{
     position: absolute;
-    left: 0;
-    width: 50%;
+    margin-left: 5%;
+    font-size: 100%;
     text-align: left;
-    background: rgba(189, 187, 197, 0.904);
+    background: rgba(245, 245, 245, 0.575);
     box-sizing: border-box;
-    color: #ff0202;
+    color: #050505;
 }
+
 
 
 ul li {
@@ -44,28 +47,32 @@ ul li:nth-child(1)
     background: url(picture.jpg);
     background-size: cover;
     background-position: left;
+    align-items: center;
 }
 ul li:nth-child(2)
 {
-    background: url(about.jpg);
+    background-image: url("about.jpg");
+    background-color: #ccc;
     background-size: cover;
     background-position: left;
 }
 ul li:nth-child(3)
 {
-    background: url(project.jpg);
+    background-color: #dcf7b9;
+    background-position: ;
     background-size: cover;
-    background-position: left;
+    background-position:left;
 }
 ul li:nth-child(4)
 {
-    background: url(phone.jpg);
+    background-color: #ccc;
     background-size: cover;
     background-position: left;
 }
 ul li:nth-child(5)
 {
-    background: url(contact.jpg);
+    float: right;
+    background-color: #ccc;
     background-size: cover;
     background-position: left;
 }
@@ -73,16 +80,14 @@ ul:hover li{
     width: 10%;
 }
 ul li:hover{
+
     width: 60%;
 
 }
 ul li:hover h1{
-    background: none;
-    text-align: left;
-    margin-left: 10vh;
-    transition: 0.1s;
-
+    bottom: -100%;
 }
+
 
 ul li .content
 {
@@ -95,6 +100,10 @@ ul li .content
     color: #fff;
     opacity: 0;
 }
+.inside{
+    background-color: #fafafa;
+    overflow: hidden;
+}
 ul li:hover .content
 {
     bottom: 0;
@@ -102,3 +111,173 @@ ul li:hover .content
     transition-delay: 0.5s;
     opacity: 1;
 }
+#inside{
+    font-family: 'Brush Script MT', cursive, sans-serif;
+    color: hsl(0, 100%, 100%);
+    
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px  white;
+    margin: 2%;
+}
+.img1{
+    margin-left: 5%;
+
+    float: left;
+}
+.img2{
+    margin-right: 5%;
+    margin-top: 8%;
+    right: 0%;
+    float: right;
+}
+.img3{
+    margin-left: 5%;
+    margin-top: 8%;
+    left: 0%;
+    float: left;
+}
+#img1{
+    margin: 4%;
+    margin-top: 8%;
+    color: rgb(0, 0, 0);
+}
+#img2{
+    margin: 4%;
+    margin-top: 16%;
+    color: rgb(0, 0, 0);
+}
+#img3{
+    margin-left: 4%;
+    margin-top: 16%;
+    color: rgb(0, 0, 0);
+}
+
+#mail{
+    text-decoration: none;
+    color: #ffffff;
+}
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+    ul{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background: #ccc;
+    
+    
+    }
+    
+    ul li h1{
+        position: absolute;
+        margin-left: 5%;
+        font-size: 100%;
+        text-align: left;
+        background: rgba(245, 245, 245, 0.575);
+        box-sizing: border-box;
+        color: #050505;
+    }
+    
+    
+    
+    ul li {
+        list-style: none;
+        position: relative;
+        width: 100%;
+        height: 20%;
+        border-bottom:1px solid #000;
+        float: left;
+        box-sizing: border-box;
+        transition: 0.5s;
+        overflow: hidden;
+        text-align: center;
+    }
+    ul li:nth-child(1)
+    {
+        background: url(picture.jpg);
+        background-size: cover;
+        background-position: left;
+        align-items: center;
+    }
+    ul li:nth-child(2)
+    {
+        background-image: url("about.jpg");
+        background-color: #ccc;
+        background-size: cover;
+        background-position: left;
+    }
+    ul li:nth-child(3)
+    {
+        background-color: #ccc;
+        background-position: ;
+        background-size: cover;
+        background-position:left;
+    }
+    ul li:nth-child(4)
+    {
+        background-color: #ccc;
+        background-size: cover;
+        background-position: left;
+    }
+    ul li:nth-child(5)
+    {
+        float: right;
+        background-color: #ccc;
+        background-size: cover;
+        background-position: left;
+    }
+    ul:hover li{
+        height: 10%;
+    }
+    ul li:hover{
+    
+        height: 60%;
+    
+    }
+    ul li:hover h1{
+        left: -100%;
+    }
+    
+    
+    ul li .content
+    {
+        position: absolute;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0,  0 , .5);
+        box-sizing: border-box;
+        color: #fff;
+        opacity: 0;
+    }
+    .inside{
+        background-color: #fafafa;
+        overflow: hidden;
+    }
+    ul li:hover .content
+    {
+        bottom: 0;
+        transition: 0.5s;
+        transition-delay: 0.5s;
+        opacity: 1;
+    }
+    #inside{
+        font-family: 'Brush Script MT', cursive, sans-serif;
+        color: #000000;
+        font-weight: bolder;
+        font-size: large;
+        
+        background: rgba(255, 255, 255, 0.5);
+        border: 2px solid white;
+        margin: 2%;
+    }
+  }
